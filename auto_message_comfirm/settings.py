@@ -25,9 +25,11 @@ SECRET_KEY = 'nz66)i$@ev4^=u*s29%q*#*(!qbsu89!z9a&*#e9p4h&g+sw)b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['161.117.189.36', '12.0.0.1']
 
-
+STATIC_ROOT = '/home/sig/PycharmProjects/auto_message_comfirm/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ('/home/sig/PycharmProjects/auto_message_comfirm/static', )
 # Application definition
 
 INSTALLED_APPS = [

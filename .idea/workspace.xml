@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc85c01-7db1-42b1-b6b2-273347f1a2ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/auto_message/send_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/send_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message_comfirm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message_comfirm/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sigchinaweb" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -74,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612160886302</updated>
       <workItem from="1612160887888" duration="162000" />
-      <workItem from="1612250432585" duration="11588000" />
+      <workItem from="1612250432585" duration="14239000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1612334801201</created>
@@ -83,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612334801201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1612406077821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612406077821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
