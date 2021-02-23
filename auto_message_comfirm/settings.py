@@ -24,7 +24,7 @@ SECRET_KEY = 'nz66)i$@ev4^=u*s29%q*#*(!qbsu89!z9a&*#e9p4h&g+sw)b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+#
 ALLOWED_HOSTS = ['161.117.189.36', '127.0.0.1', ]
 
 STATIC_ROOT = 'static'
@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'auto_message_comfirm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'BP_database',
+        'USER': 'root',
+        'PASSWORD': 'Sus9uehanna!',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
