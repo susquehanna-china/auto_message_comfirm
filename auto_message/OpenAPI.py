@@ -4,6 +4,7 @@ import time
 import base64
 from urllib.parse import quote
 import hashlib
+
 send_url = "http://47.112.247.219/sms-inbox/api/send"
 
 account = 'http135993'
@@ -15,7 +16,7 @@ for i in time_list:
         time_now = time_now + '0' + str(i)
     else:
         time_now += str(i)
-nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8'))
+nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
 
 content = '【验证码】您的验证码是123456'
 content = quote(content, 'utf-8')
@@ -37,6 +38,4 @@ data = {
 }
 headers = {'Content-Type': "application/json"}
 test = requests.post(url=send_url, headers=headers, data=json.dumps(data))
-print(
-    test.text
-)
+print(test.text)
