@@ -1,10 +1,42 @@
 import requests
-
+import json
+import time
+import base64
+from urllib.parse import quote
+import hashlib
 send_url = "http://47.112.247.219/sms-inbox/api/send"
 
-test_url = 'http://127.0.0.1:8000/portfolio_comfirm/api'
+account = 'http135993'
+now = time.localtime()
+time_list = [now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec]
+time_now = ''
+for i in time_list:
+    if len(str(i)) == 1:
+        time_now = time_now + '0' + str(i)
+    else:
+        time_now += str(i)
+nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8'))
 
-test = requests.get('http://127.0.0.1:8000/portfolio_comfirm/api?data=123')
+content = '【验证码】您的验证码是123456'
+content = quote(content, 'utf-8')
+
+mobiles = '18721702068'
+
+key = '4fae0b045'
+string1 = sorted([key, time_now, account])
+out = ''
+for i in string1:
+    out += i
+signature = hashlib.sha1(out.encode('utf-8')).hexdigest()
+
+data = {
+    "nonce": nonce,
+    "mobiles": mobiles,
+    "sendContent": content,
+    "signature": signature
+}
+headers = {'Content-Type': "application/json"}
+test = requests.post(url=send_url, headers=headers, data=json.dumps(data))
 print(
     test.text
 )
