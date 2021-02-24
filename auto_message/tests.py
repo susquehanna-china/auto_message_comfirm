@@ -18,7 +18,7 @@ for i in timelist:
 nonce = base64.b64encode(bytes(account + ',' + timenow, 'utf-8'))
 print(nonce)
 
-content = '这是一条测试短信'
+content = '【海纳百川】SIG投后提醒您确认是否发送每月财报，如已发送请回复1'
 print(quote(content, 'utf-8'))
 
 mobiles = '18721702068'
