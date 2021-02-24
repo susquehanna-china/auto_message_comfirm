@@ -4,8 +4,8 @@ from django.test import TestCase
 import base64
 import hashlib
 import time
-from urllib.parse import urlencode,quote
-account = b'http135993'
+from urllib.parse import quote
+account = 'http135993'
 now = time.localtime()
 timelist = [now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec]
 timenow = ''
@@ -15,7 +15,7 @@ for i in timelist:
     else:
         timenow += str(i)
 
-nonce = base64.b64encode(bytes(timenow, 'utf-8'))
+nonce = base64.b64encode(bytes(account + ',' + timenow, 'utf-8'))
 print(nonce)
 
 content = '这是一条测试短信'
@@ -25,7 +25,7 @@ mobiles = '18721702068'
 
 key = '4fae0b045'
 
-string1 = sorted([key, str(timenow), str(account)])
+string1 = sorted([key, timenow, account])
 out = ''
 for i in string1:
     out += i
