@@ -4,7 +4,7 @@ from django.test import TestCase
 import base64
 import hashlib
 import time
-
+from urllib.parse import urlencode,quote
 account = b'http135993'
 now = time.localtime()
 timelist = [now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec]
@@ -19,7 +19,7 @@ nonce = base64.b64encode(bytes(timenow, 'utf-8'))
 print(nonce)
 
 content = '这是一条测试短信'
-print(content.encode('utf-8'))
+print(quote(content, 'utf-8'))
 
 mobiles = '18721702068'
 
