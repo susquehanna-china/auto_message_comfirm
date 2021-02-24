@@ -3,6 +3,8 @@ from .models import PortfolioCompany
 from django.template import loader
 from django.views.decorators import csrf
 from django.db.models import F
+from django.http import HttpResponse
+import json
 
 
 # Create your views here.
@@ -13,7 +15,7 @@ def index(request):
             if company.status:
                 return render(request, 'index.html', {'result': 'exist'})
             else:
-                #company = PortfolioCompany.objects.get(tele_number=request.POST['tele_number'])
+                # company = PortfolioCompany.objects.get(tele_number=request.POST['tele_number'])
                 company.status = 1
                 company.save()
                 return render(request, 'index.html', {'result': 'commit success'})
@@ -21,3 +23,21 @@ def index(request):
             return render(request, 'index.html', {'result': 'no such info'})
 
     return render(request, 'index.html', {})
+
+
+def report(request):
+    tele_number = request.GET.get('mobile')
+    content = request.GET.get('content')
+
+    if content == '1':
+        try:
+            company = PortfolioCompany.objects.get(tele_number=tele_number)
+            if company.status:
+                return HttpResponse(200)
+            else:
+                company.update(status=True)
+            return HttpResponse('commit')
+        except PortfolioCompany.DoesNotExist:
+            return HttpResponse('404')
+    else:
+        return HttpResponse(200)
