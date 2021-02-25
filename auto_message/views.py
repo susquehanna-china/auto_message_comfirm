@@ -26,18 +26,11 @@ def index(request):
 
 
 def report(request):
-    tele_number = request.GET.get('mobile')
-    content = request.GET.get('content')
-
-    if content == '1':
-        try:
-            company = PortfolioCompany.objects.get(tele_number=tele_number)
-            if company.status:
-                return HttpResponse(200)
-            else:
-                company.update(status=True)
-            return HttpResponse('commit')
-        except PortfolioCompany.DoesNotExist:
-            return HttpResponse('404')
-    else:
+    if request.method == 'POST':
+        result = json.loads(request.body)
+        print(result['mobile'])
+        print(result['content'])
         return HttpResponse(200)
+    return HttpResponse('method error')
+
+

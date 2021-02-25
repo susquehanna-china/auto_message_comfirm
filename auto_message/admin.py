@@ -3,9 +3,8 @@ from .models import PortfolioCompany
 
 
 class PortfolioAdmin(admin.ModelAdmin):
-    list_display = ('name', 'principal', 'tele_number', 'status')
+    list_display = ('name', 'principal', 'tele_number', 'cycle', 'status')
     search_fields = ('name',)
 
 
 admin.site.register(PortfolioCompany, PortfolioAdmin)
-
