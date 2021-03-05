@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc85c01-7db1-42b1-b6b2-273347f1a2ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auto_message/migrations/0004_portfoliocompany_comment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_message/OpenAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/OpenAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_message/migrations/0005_auto_20210305_0745.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto_message/migrations/0006_auto_20210305_0801.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_message/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_message/send_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/send_message.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_message/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_message_comfirm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message_comfirm/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +199,7 @@
       <workItem from="1613626382362" duration="1896000" />
       <workItem from="1614042789382" duration="29759000" />
       <workItem from="1614157592319" duration="1069000" />
-      <workItem from="1614226006706" duration="28822000" />
+      <workItem from="1614226006706" duration="30501000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1612334801201</created>
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614153693064</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="version 0.2 基本单条测试成功">
+      <created>1614929686161</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614929686161</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,29 +294,34 @@
     <MESSAGE value="test version" />
     <MESSAGE value="change encode method" />
     <MESSAGE value="content update" />
-    <option name="LAST_COMMIT_MESSAGE" value="content update" />
+    <MESSAGE value="version 0.2 基本单条测试成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 0.2 基本单条测试成功" />
   </component>
   <component name="WindowStateProjectService">
     <state x="143" y="59" width="879" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614229807872">
       <screen x="72" y="27" width="952" height="741" />
     </state>
     <state x="143" y="59" width="879" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.952.741@72.27.952.741" timestamp="1614229807872" />
-    <state width="898" height="169" key="GridCell.Tab.0.bottom" timestamp="1614927527209">
+    <state x="83" y="27" width="920" height="741" key="CommitChangelistDialog2" timestamp="1614929685993">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.bottom/72.27.952.741@72.27.952.741" timestamp="1614927527209" />
-    <state width="898" height="169" key="GridCell.Tab.0.center" timestamp="1614927527208">
+    <state x="83" y="27" width="920" height="741" key="CommitChangelistDialog2/72.27.952.741@72.27.952.741" timestamp="1614929685993" />
+    <state width="898" height="169" key="GridCell.Tab.0.bottom" timestamp="1614931272538">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.center/72.27.952.741@72.27.952.741" timestamp="1614927527208" />
-    <state width="898" height="169" key="GridCell.Tab.0.left" timestamp="1614927527208">
+    <state width="898" height="169" key="GridCell.Tab.0.bottom/72.27.952.741@72.27.952.741" timestamp="1614931272538" />
+    <state width="898" height="169" key="GridCell.Tab.0.center" timestamp="1614931272538">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.left/72.27.952.741@72.27.952.741" timestamp="1614927527208" />
-    <state width="898" height="169" key="GridCell.Tab.0.right" timestamp="1614927527208">
+    <state width="898" height="169" key="GridCell.Tab.0.center/72.27.952.741@72.27.952.741" timestamp="1614931272538" />
+    <state width="898" height="169" key="GridCell.Tab.0.left" timestamp="1614931272538">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.right/72.27.952.741@72.27.952.741" timestamp="1614927527208" />
+    <state width="898" height="169" key="GridCell.Tab.0.left/72.27.952.741@72.27.952.741" timestamp="1614931272538" />
+    <state width="898" height="169" key="GridCell.Tab.0.right" timestamp="1614931272538">
+      <screen x="72" y="27" width="952" height="741" />
+    </state>
+    <state width="898" height="169" key="GridCell.Tab.0.right/72.27.952.741@72.27.952.741" timestamp="1614931272538" />
     <state width="898" height="211" key="GridCell.Tab.1.bottom" timestamp="1614229814587">
       <screen x="72" y="27" width="952" height="741" />
     </state>
@@ -330,7 +340,7 @@
     <state width="898" height="211" key="GridCell.Tab.1.right/72.27.952.741@72.27.952.741" timestamp="1614229814587" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/auto_message_comfirm$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1614927499561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
+    <SUITE FILE_PATH="coverage/auto_message_comfirm$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1614930802356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$test.coverage" NAME="test Coverage Results" MODIFIED="1612506723671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message_comfirm" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$tests.coverage" NAME="tests Coverage Results" MODIFIED="1614152703044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$OpenAPI.coverage" NAME="OpenAPI Coverage Results" MODIFIED="1614761645171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />

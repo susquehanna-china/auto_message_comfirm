@@ -33,7 +33,7 @@ def report(request):
             if item['content'] == '1':
                 tele_number = item['mobile']
                 try:
-                    company = PortfolioCompany.objects.get(tele_number=tele_number)
+                    company = PortfolioCompany.objects.get(phone=tele_number)
                     company.status = True
                     company.save()
                 except PortfolioCompany.DoesNotExist:
