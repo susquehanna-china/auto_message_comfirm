@@ -25,7 +25,7 @@ SECRET_KEY = 'nz66)i$@ev4^=u*s29%q*#*(!qbsu89!z9a&*#e9p4h&g+sw)b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #
-ALLOWED_HOSTS = ['161.117.189.36', '127.0.0.1', ]
+ALLOWED_HOSTS = ['161.117.189.36', '127.0.0.1', '*']
 
 STATIC_ROOT = 'static'
 STATIC_URL = '/static/'

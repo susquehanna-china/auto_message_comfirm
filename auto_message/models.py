@@ -7,6 +7,7 @@ class PortfolioCompany(models.Model):
     tele_number = models.CharField(max_length=11, null=True)
     cycle = models.CharField(max_length=10, null=True, choices=(('monthly', 'monthly'), ('quarter', 'quarter')))
     status = models.BooleanField(null=True, default=False)
+    comment = models.TextField(max_length=100, null=True, blank=True)
 
     class Meta:
         ordering = ["name"]

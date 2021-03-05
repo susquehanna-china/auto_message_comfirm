@@ -28,9 +28,21 @@ def index(request):
 def report(request):
     if request.method == 'POST':
         result = json.loads(request.body)
-        print(result['mobile'])
-        print(result['content'])
-        return HttpResponse(200)
+        for item in result:
+            print(item)
+            if item['content'] == '1':
+                tele_number = item['mobile']
+                try:
+                    company = PortfolioCompany.objects.get(tele_number=tele_number)
+                    company.status = True
+                    company.save()
+                except PortfolioCompany.DoesNotExist:
+                    pass
+
+        return HttpResponse('ok')
+    else:
+        result = request
+        print(result)
     return HttpResponse('method error')
 
 

@@ -1,25 +1,78 @@
 import pymysql
+import requests
+import json
 import time
+import base64
+from urllib.parse import quote
+import hashlib
 
-def get_data(cycle):
+
+def get_data(cycle):  # cycle = 1 means monthly else means all
     db = pymysql.connect(host='localhost', user='root', password='Sus9uehanna!', db='portfolio')
     cursor = db.cursor()
     if cycle == 1:
         cursor.execute(
             "select tele_number from auto_message_portfoliocompany where cycle = 'monthly' and status = false ")
         result = cursor.fetchall()
-        return [i[0] for i in result]
+        db.close()
+        out = ''
+        for i in result:
+            out += str(i[0] + ',')
+        return out
     else:
         cursor.execute(
-            "select tele_number from auto_message_portfoliocompany where cycle = 'quarter' and status = false ")
+            "select tele_number from auto_message_portfoliocompany where and status = false ")  # all
         result = cursor.fetchall()
-        return [i[0] for i in result]
+        db.close()
+        out = ''
+        for i in result:
+            out += str(i[0] + ',')
+        return out
+
+def openapi(target):
+    send_url = "http://47.112.247.219/sms-inbox/api/send"
+
+    account = 'http135993'
+    now = time.localtime()
+    time_list = [now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec]
+    time_now = ''
+    for i in time_list:
+        if len(str(i)) == 1:
+            time_now = time_now + '0' + str(i)
+        else:
+            time_now += str(i)
+    nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
+
+    content = '【海纳亚洲】SIG投后提醒您确认是否发送本月/本季财报，如已发送请回复1'
+    content = quote(content, 'utf-8')
+
+    mobiles = target
+
+    key = '4fae0b045'
+    string1 = sorted([key, time_now, account])
+    out = ''
+    for i in string1:
+        out += i
+    signature = hashlib.sha1(out.encode('utf-8')).hexdigest()
+
+    data = {
+        "nonce": nonce,
+        "mobiles": mobiles,
+        "sendContent": content,
+        "signature": signature
+    }
+    headers = {'Content-Type': "application/json"}
+    send = requests.post(url=send_url, headers=headers, data=json.dumps(data))
+
+
 
 
 while True:
-    if time.localtime().tm_min % 2 == 0:
-        print(get_data(1))
-        time.sleep(60)
-    else:
+    if time.localtime().tm_mon in [1, 4, 7, 10]:
         print(get_data(0))
-        time.sleep(60)
+        openapi(get_data(0))
+        time.sleep(60 * 60 * 24 * 3)
+    else:
+        print(get_data(1))
+        openapi(get_data(1))
+        time.sleep(60 * 60 * 24 * 3)

@@ -18,10 +18,10 @@ for i in time_list:
         time_now += str(i)
 nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
 
-content = '【验证码】您的验证码是123456'
+content = '【海纳亚洲】SIG投后提醒您确认是否发送本月/本季财报，如已发送请回复1'
 content = quote(content, 'utf-8')
 
-mobiles = '18721702068'
+mobiles = '13858090451'
 
 key = '4fae0b045'
 string1 = sorted([key, time_now, account])
