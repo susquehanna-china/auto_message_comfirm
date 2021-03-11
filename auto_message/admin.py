@@ -4,8 +4,8 @@ from .models import PortfolioCompany
 
 class PortfolioAdmin(admin.ModelAdmin):
     list_display = (
-    'fund', 'name', 'investment_manager', 'contact', 'position', 'phone', 'email', 'cycle', 'status')
-    search_fields = ('name', 'fund', 'name', 'investment_manager', 'contact', 'position', 'phone', )
+        'fund', 'name', 'investment_manager', 'contact', 'position', 'phone', 'email', 'cycle', 'status')
+    search_fields = ('name', 'fund', 'name', 'investment_manager', 'contact', 'position', 'phone',)
 
 
 admin.site.register(PortfolioCompany, PortfolioAdmin)

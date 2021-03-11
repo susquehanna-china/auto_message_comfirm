@@ -7,12 +7,22 @@ from urllib.parse import quote
 import hashlib
 
 
+def clear_data(cycle):
+    db = pymysql.connect(host='localhost', user='root', password='Sus9uehanna!', db='portfolio')
+    cursor = db.cursor()
+    if cycle == 1:
+        cursor.execute("update auto_message_portfoliocompany set status=false where cycle= 'monthly'")
+    else:
+        cursor.execute("update auto_message_portfoliocompany set status=false")
+    db.close()
+
+
 def get_data(cycle):  # cycle = 1 means monthly else means all
     db = pymysql.connect(host='localhost', user='root', password='Sus9uehanna!', db='portfolio')
     cursor = db.cursor()
     if cycle == 1:
         cursor.execute(
-            "select tele_number from auto_message_portfoliocompany where cycle = 'monthly' and status = false ")
+            "select phone from auto_message_portfoliocompany where cycle = 'monthly' and status = false ")
         result = cursor.fetchall()
         db.close()
         out = ''
@@ -21,13 +31,14 @@ def get_data(cycle):  # cycle = 1 means monthly else means all
         return out
     else:
         cursor.execute(
-            "select tele_number from auto_message_portfoliocompany where and status = false ")  # all
+            "select phone from auto_message_portfoliocompany where and status = false ")  # all
         result = cursor.fetchall()
         db.close()
         out = ''
         for i in result:
             out += str(i[0] + ',')
         return out
+
 
 def openapi(target):
     send_url = "http://47.112.247.219/sms-inbox/api/send"
@@ -65,14 +76,16 @@ def openapi(target):
     send = requests.post(url=send_url, headers=headers, data=json.dumps(data))
 
 
-
-
 while True:
     if time.localtime().tm_mon in [1, 4, 7, 10]:
+        if time.localtime().tm_mday == 20:
+            clear_data(0)
         print(get_data(0))
         openapi(get_data(0))
         time.sleep(60 * 60 * 24 * 3)
     else:
+        if time.localtime().tm_mday == 20:
+            clear_data(1)
         print(get_data(1))
         openapi(get_data(1))
         time.sleep(60 * 60 * 24 * 3)
