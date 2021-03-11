@@ -82,7 +82,10 @@ def report(request):
                     company = PortfolioCompany.objects.get(phone=tele_number)
                     if not company.status:
                         company.status = True
-                        company.commit_record += str(str(time.localtime().tm_year) + '/' + str(time.localtime().tm_mon) + ';')
+                        if company.commit_record:
+                            company.commit_record += str(str(time.localtime().tm_year) + '/' + str(time.localtime().tm_mon) + ';')
+                        else:
+                            company.commit_record = str(str(time.localtime().tm_year) + '/' + str(time.localtime().tm_mon) + ';')
                         company.save()
                     return_message('【海纳亚洲】确认成功，感谢您的配合！', tele_number)
                 except PortfolioCompany.DoesNotExist:

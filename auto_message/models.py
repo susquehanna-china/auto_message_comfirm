@@ -11,7 +11,7 @@ class PortfolioCompany(models.Model):
     email = models.CharField(max_length=50, null=True, blank=True)
     cycle = models.CharField(max_length=10, null=True, choices=(('monthly', 'monthly'), ('quarter', 'quarter')))
     status = models.BooleanField(null=True, default=False)
-    commit_record = models.CharField(max_length=10000, null=True, blank=True)
+    commit_record = models.CharField(max_length=10000, null=True, blank=True, default=' ')
     comment = models.TextField(max_length=100, null=True, blank=True)
 
     class Meta:
