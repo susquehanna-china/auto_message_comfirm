@@ -22,7 +22,8 @@ def get_data(cycle):  # cycle = 1 means monthly else means all
     cursor = db.cursor()
     if cycle == 1:
         cursor.execute(
-            "select phone from auto_message_portfoliocompany where cycle = 'monthly' and status = false ")
+            "select phone from auto_message_portfoliocompany where cycle = 'monthly' and status = false and active = "
+            "True")
         result = cursor.fetchall()
         db.close()
         out = ''
@@ -31,7 +32,7 @@ def get_data(cycle):  # cycle = 1 means monthly else means all
         return out
     else:
         cursor.execute(
-            "select phone from auto_message_portfoliocompany where status = false ")  # all
+            "select phone from auto_message_portfoliocompany where status = false and active = True")  # all
         result = cursor.fetchall()
         db.close()
         out = ''
