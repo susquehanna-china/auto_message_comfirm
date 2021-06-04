@@ -55,7 +55,7 @@ def openapi(target):
     nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
 
     content = '【海纳亚洲】SIG投后提醒您请确认是否已将本月/本季财报及运营数据发送至投后邮箱ChinaPIM@sig.com及相关投资负责人邮箱，' \
-              '如有问题可联系咨询Eva Zhang010-65666830。如已发送请回复1。'
+              '如有问题可联系咨询Eva Zhang 010-65666830。如已发送请回复1。'
     content = quote(content, 'utf-8')
 
     mobiles = target
