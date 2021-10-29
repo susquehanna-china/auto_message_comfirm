@@ -18,7 +18,7 @@ for i in time_list:
         time_now += str(i)
 nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
 
-content = '【海纳亚洲】SIG投后提醒您确认是否发送本月/本季财报，如已发送请回复1'
+content = '【海纳亚洲】您好，您的报名已确认！感谢您报名参加SIG与薪智联合举办的线上活动，活动将如期于2021年11月3日14:00以直播的形式呈现，您可点击此链接https://mudu.tv/live/watch/technology?id=m3yn25ro进入直播间，期待您的支持与参与。'
 content = quote(content, 'utf-8')
 
 mobiles = '18721702068'
