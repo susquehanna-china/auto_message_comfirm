@@ -14,25 +14,9 @@ import hashlib
 
 
 # Create your views here.
-def index(request):
-    if request.POST:
-        try:
-            company = PortfolioCompany.objects.get(tele_number=request.POST['tele_number'])
-            if company.status:
-                return render(request, 'index.html', {'result': 'exist'})
-            else:
-                # company = PortfolioCompany.objects.get(tele_number=request.POST['tele_number'])
-                company.status = 1
-                company.save()
-                return render(request, 'index.html', {'result': 'commit success'})
-        except PortfolioCompany.DoesNotExist:
-            return render(request, 'index.html', {'result': 'no such info'})
-
-    return render(request, 'index.html', {})
-
 
 def return_message(content, target):
-    send_url = "http://47.112.247.219/sms-inbox/api/send"
+    send_url = "http://120.77.221.146/sms-inbox/api/send"
 
     account = 'http135993'
     now = time.localtime()
@@ -72,6 +56,7 @@ def return_message(content, target):
 
 
 def report(request):
+    print(request)
     if request.method == 'POST':
         result = json.loads(request.body)
         for item in result:
@@ -92,6 +77,7 @@ def report(request):
                     return_message('【海纳亚洲】确认成功，感谢您的配合！', tele_number)
                 except PortfolioCompany.DoesNotExist:
                     print('error')
+
             else:
                 return_message('【海纳亚洲】您发送的确认信息有误，如已经发送相关文件请回复1', item['mobile'])
 

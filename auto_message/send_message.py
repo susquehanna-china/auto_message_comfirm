@@ -42,7 +42,7 @@ def get_data(cycle):  # cycle = 1 means monthly else means all
 
 
 def openapi(target):
-    send_url = "http://47.112.247.219/sms-inbox/api/send"
+    send_url = "http://120.77.221.146/sms-inbox/api/send"
 
     account = 'http135993'
     now = time.localtime()
@@ -55,7 +55,7 @@ def openapi(target):
             time_now += str(i)
     nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
 
-    content = '【海纳亚洲】SIG投后提醒您请确认是否已将本月/本季财报及运营数据发送至投后邮箱ChinaPIM@sig.com及相关投资负责人邮箱，' \
+    content = '【海纳亚洲】SIG投后提醒您请确认是否已将9月/本季度财报及运营数据发送至投后邮箱ChinaPIM@sig.com及相关投资负责人邮箱，' \
               '如有问题可联系咨询Eva Zhang 010-65666830。如已发送请回复1。'
     content = quote(content, 'utf-8')
 
@@ -76,18 +76,15 @@ def openapi(target):
     }
     headers = {'Content-Type': "application/json"}
     send = requests.post(url=send_url, headers=headers, data=json.dumps(data))
+    print(send.text)
 
 
 while True:
     if time.localtime().tm_mon in [1, 4, 7, 10]:
-        if time.localtime().tm_mday == 20:
-            clear_data(0)
-        print(get_data(0))
+        #print(get_data(0))
         openapi(get_data(0))
         time.sleep(60 * 60 * 24 * 3)
     else:
-        if time.localtime().tm_mday == 20:
-            clear_data(1)
-        print(get_data(1))
+        #print(get_data(1))
         openapi(get_data(1))
         time.sleep(60 * 60 * 24 * 3)

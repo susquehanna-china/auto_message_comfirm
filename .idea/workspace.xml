@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bc85c01-7db1-42b1-b6b2-273347f1a2ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auto_message/migrations/0009_portfoliocompany_active.py" afterDir="false" />
+    <list default="true" id="0bc85c01-7db1-42b1-b6b2-273347f1a2ed" name="Default Changelist" comment="version 1.1">
+      <change afterPath="$PROJECT_DIR$/auto_message/clear_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/OpenAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/OpenAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_message/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_message/send_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/send_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +46,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="SQL Updates" />
+    <property name="database.data.extractors.current.id" value="SQL Updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sigchinaweb" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Django Server.auto_message_comfirm">
+  <component name="RunManager" selected="Python.send_message">
     <configuration name="OpenAPI" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="auto_message_comfirm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,6 +69,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_message/OpenAPI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="clear_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="auto_message_comfirm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto_message" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_message/clear_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="auto_message_comfirm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,11 +195,12 @@
       <item itemvalue="Python.send_message" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.tests" />
+      <item itemvalue="Python.clear_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.clear_data" />
         <item itemvalue="Python.tests" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +228,7 @@
       <workItem from="1614226006706" duration="52445000" />
       <workItem from="1616118274477" duration="68000" />
       <workItem from="1616120839700" duration="7922000" />
-      <workItem from="1619072463269" duration="3594000" />
+      <workItem from="1619072463269" duration="56011000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1612334801201</created>
@@ -313,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622790145730</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="version 1.1">
+      <created>1622791183909</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622791183909</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,30 +378,34 @@
       <screen x="72" y="27" width="952" height="741" />
     </state>
     <state x="143" y="59" width="879" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.952.741@72.27.952.741" timestamp="1618900780434" />
-    <state x="83" y="27" width="920" height="741" key="CommitChangelistDialog2" timestamp="1622790145598">
+    <state x="83" y="27" width="920" height="741" key="CommitChangelistDialog2" timestamp="1622791191697">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state x="83" y="27" width="920" height="741" key="CommitChangelistDialog2/72.27.952.741@72.27.952.741" timestamp="1622790145598" />
+    <state x="83" y="27" width="920" height="741" key="CommitChangelistDialog2/72.27.952.741@72.27.952.741" timestamp="1622791191697" />
+    <state x="172" y="127" width="752" height="541" key="DiffContextDialog" timestamp="1623829131643">
+      <screen x="72" y="27" width="952" height="741" />
+    </state>
+    <state x="172" y="127" width="752" height="541" key="DiffContextDialog/72.27.952.741@72.27.952.741" timestamp="1623829131643" />
     <state x="309" y="27" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616480928543">
       <screen x="72" y="27" width="952" height="741" />
     </state>
     <state x="309" y="27" width="424" height="491" key="FileChooserDialogImpl/72.27.952.741@72.27.952.741" timestamp="1616480928543" />
-    <state width="898" height="169" key="GridCell.Tab.0.bottom" timestamp="1622790320852">
+    <state width="898" height="169" key="GridCell.Tab.0.bottom" timestamp="1634541962136">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.bottom/72.27.952.741@72.27.952.741" timestamp="1622790320852" />
-    <state width="898" height="169" key="GridCell.Tab.0.center" timestamp="1622790320852">
+    <state width="898" height="169" key="GridCell.Tab.0.bottom/72.27.952.741@72.27.952.741" timestamp="1634541962136" />
+    <state width="898" height="169" key="GridCell.Tab.0.center" timestamp="1634541962135">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.center/72.27.952.741@72.27.952.741" timestamp="1622790320852" />
-    <state width="898" height="169" key="GridCell.Tab.0.left" timestamp="1622790320851">
+    <state width="898" height="169" key="GridCell.Tab.0.center/72.27.952.741@72.27.952.741" timestamp="1634541962135" />
+    <state width="898" height="169" key="GridCell.Tab.0.left" timestamp="1634541962135">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.left/72.27.952.741@72.27.952.741" timestamp="1622790320851" />
-    <state width="898" height="169" key="GridCell.Tab.0.right" timestamp="1622790320852">
+    <state width="898" height="169" key="GridCell.Tab.0.left/72.27.952.741@72.27.952.741" timestamp="1634541962135" />
+    <state width="898" height="169" key="GridCell.Tab.0.right" timestamp="1634541962136">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state width="898" height="169" key="GridCell.Tab.0.right/72.27.952.741@72.27.952.741" timestamp="1622790320852" />
+    <state width="898" height="169" key="GridCell.Tab.0.right/72.27.952.741@72.27.952.741" timestamp="1634541962136" />
     <state width="898" height="211" key="GridCell.Tab.1.bottom" timestamp="1616118260657">
       <screen x="72" y="27" width="952" height="741" />
     </state>
@@ -382,15 +422,24 @@
       <screen x="72" y="27" width="952" height="741" />
     </state>
     <state width="898" height="211" key="GridCell.Tab.1.right/72.27.952.741@72.27.952.741" timestamp="1616118260657" />
-    <state x="143" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1615439702253">
+    <state x="143" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1622791211183">
       <screen x="72" y="27" width="952" height="741" />
     </state>
-    <state x="143" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2/72.27.952.741@72.27.952.741" timestamp="1615439702253" />
+    <state x="143" y="132" width="800" height="538" key="Vcs.Push.Dialog.v2/72.27.952.741@72.27.952.741" timestamp="1622791211183" />
+    <state x="362" y="41" width="361" height="719" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1629093055894">
+      <screen x="72" y="27" width="952" height="741" />
+    </state>
+    <state x="362" y="41" width="361" height="719" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/72.27.952.741@72.27.952.741" timestamp="1629093055894" />
+    <state x="317" y="307" width="461" height="187" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634542508912">
+      <screen x="72" y="27" width="952" height="741" />
+    </state>
+    <state x="317" y="307" width="461" height="187" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.952.741@72.27.952.741" timestamp="1634542508912" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/auto_message_comfirm$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1618900838993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
+    <SUITE FILE_PATH="coverage/auto_message_comfirm$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1634541962119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
+    <SUITE FILE_PATH="coverage/auto_message_comfirm$clear_data.coverage" NAME="clear_data Coverage Results" MODIFIED="1631582891801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$test.coverage" NAME="test Coverage Results" MODIFIED="1612506723671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message_comfirm" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$tests.coverage" NAME="tests Coverage Results" MODIFIED="1615438486710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
-    <SUITE FILE_PATH="coverage/auto_message_comfirm$OpenAPI.coverage" NAME="OpenAPI Coverage Results" MODIFIED="1615444370984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
+    <SUITE FILE_PATH="coverage/auto_message_comfirm$OpenAPI.coverage" NAME="OpenAPI Coverage Results" MODIFIED="1629789794233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
   </component>
 </project>

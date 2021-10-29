@@ -5,7 +5,7 @@ import base64
 from urllib.parse import quote
 import hashlib
 
-send_url = "http://47.112.247.219/sms-inbox/api/send"
+send_url = "http://120.77.221.146/sms-inbox/api/send"
 
 account = 'http135993'
 now = time.localtime()
