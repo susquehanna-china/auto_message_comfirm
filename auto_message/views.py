@@ -12,7 +12,7 @@ import base64
 from urllib.parse import quote
 import hashlib
 from rest_framework.views import APIView
-
+import datetime
 
 # Create your views here.
 
@@ -93,21 +93,26 @@ def DIY_message(number, text):
     send_url = "http://120.77.221.146/sms-inbox/api/send"
 
     account = 'http135993'
-    now = time.localtime()
-    time_list = [now.tm_year, now.tm_mon, now.tm_mday, now.tm_hour, now.tm_min, now.tm_sec]
-    time_now = ''
-    for i in time_list:
-        if len(str(i)) == 1:
-            time_now = time_now + '0' + str(i)
-        else:
-            time_now += str(i)
-    nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
 
     content = '【海纳亚洲】' + text
     content = quote(content, 'utf-8')
 
     mobiles = number
     key = '4fae0b045'
+
+    now = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
+    time_list = [now.year, now.month, now.day, now.hour, now.minute, now.second]
+    time_now = ''
+    for i in time_list:
+        if len(str(i)) == 1:
+            time_now = time_now + '0' + str(i)
+        else:
+            time_now += str(i)
+    print(time_now)
+    #x = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
+    #print(x.year, x.month, x.day, x.hour, x.minute, x.second)
+    nonce = base64.b64encode(bytes(account + ',' + time_now, 'utf-8')).decode()
+
     string1 = sorted([key, time_now, account])
     out = ''
     for i in string1:

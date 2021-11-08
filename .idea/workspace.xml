@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc85c01-7db1-42b1-b6b2-273347f1a2ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appfront/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appfront/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto_message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/OpenAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/OpenAPI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto_message/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635736158943</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update DIY message send function">
+      <created>1636356579072</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1636356579072</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,12 +304,13 @@
     <MESSAGE value="content update" />
     <MESSAGE value="openAPI test" />
     <MESSAGE value="openAPI use" />
-    <option name="LAST_COMMIT_MESSAGE" value="openAPI use" />
+    <MESSAGE value="update DIY message send function" />
+    <option name="LAST_COMMIT_MESSAGE" value="update DIY message send function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/auto_message_comfirm$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1614220152154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$tests.coverage" NAME="tests Coverage Results" MODIFIED="1614152703044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
-    <SUITE FILE_PATH="coverage/auto_message_comfirm$OpenAPI.coverage" NAME="OpenAPI Coverage Results" MODIFIED="1635498823678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
+    <SUITE FILE_PATH="coverage/auto_message_comfirm$OpenAPI.coverage" NAME="OpenAPI Coverage Results" MODIFIED="1636357941007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
     <SUITE FILE_PATH="coverage/auto_message_comfirm$test.coverage" NAME="test Coverage Results" MODIFIED="1612506723671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message_comfirm" />
   </component>
 </project>
