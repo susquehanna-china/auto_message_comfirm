@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc85c01-7db1-42b1-b6b2-273347f1a2ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/auto_message/OpenAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/OpenAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appfront/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_message/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_message/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +52,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BP_database" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Python.OpenAPI">
+  <component name="RunManager" selected="Django Server.auto_message_comfirm">
     <configuration name="OpenAPI" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="auto_message_comfirm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,14 +154,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="auto_message_comfirm.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/sigchinaweb/bin/python3.6" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="" />
+      <option name="host" value="127.0.0.1" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -157,6 +170,13 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django Server.auto_message_comfirm" />
+      <item itemvalue="Python.OpenAPI" />
+      <item itemvalue="Python.send_message" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.tests" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.send_message" />
@@ -264,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635499068398</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="openAPI use">
+      <created>1635736158943</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1635736158943</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +308,8 @@
     <MESSAGE value="change encode method" />
     <MESSAGE value="content update" />
     <MESSAGE value="openAPI test" />
-    <option name="LAST_COMMIT_MESSAGE" value="openAPI test" />
+    <MESSAGE value="openAPI use" />
+    <option name="LAST_COMMIT_MESSAGE" value="openAPI use" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/auto_message_comfirm$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1614220152154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_message" />
